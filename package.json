@@ -1,0 +1,25 @@
+{
+  "name": "tsdemo",
+  "version": "1.0.0",
+  "description": "proyecto ejemplo para desarrollo con typescript",
+  "main": "index.ts",
+  "scripts": {
+    "tsnode": "cd src && ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "transpilation": "tsc",
+    "build:prod":"rimraf ./build && tsc",
+    "start:prod":"npm run build:prod && node build/index.js"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "@leozeron",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescritp": "^1.0.0"
+  }
+}
